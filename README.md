@@ -8,5 +8,6 @@
 ```python
     input_files = glob.glob('*.txt')
     input_files_iterator = MultiFileIterator( input_files)
-    content = list(input_files_iterator)
+    # reading content through multiple files
+    content = input_files_iterator.read()
 ```
